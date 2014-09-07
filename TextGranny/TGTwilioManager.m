@@ -49,8 +49,8 @@ static NSString* kTokenUrl = @"http://raspberry.troest.com/auth.php?client=%@";
 
 -(void) setClientName:(NSString*) name
 {
-    if([name isEqualToString:_clientName])
-        return;
+//    if([name isEqualToString:_clientName])
+//        return;
     //clientName has been changed, generate new token and device
     if (_device) {
         [_device disconnectAll];
@@ -61,8 +61,10 @@ static NSString* kTokenUrl = @"http://raspberry.troest.com/auth.php?client=%@";
     {
         [self connectDevice];
     }
-    else if([self.delegate respondsToSelector:@selector(didNotListen)]){
-        [self.delegate didNotListen];
+
+    else
+    {
+        [self respondDidNotListen];
     }
     
 }
@@ -81,22 +83,49 @@ static NSString* kTokenUrl = @"http://raspberry.troest.com/auth.php?client=%@";
             //Make sure you run the Twilio SDK on main thread, it uses dispatch to do many things I gather from viewing the callstack
             [self performSelectorOnMainThread:@selector(createDevice) withObject:nil waitUntilDone:NO];
         }
-        else if([self.delegate respondsToSelector:@selector(didNotListen)]){
-            [self.delegate didNotListen];
-        }
+        else
+            [self performSelectorOnMainThread:@selector(respondDidNotListen) withObject:nil waitUntilDone:NO];
     }];
     
+}
+
+-(void) reConnect
+{
+    if (_clientName.length
+        && _device.state  == TCDeviceStateOffline) {
+        [self connectDevice];
+    }
+}
+
+-(void) respondDidNotListen
+{
+    if([self.delegate respondsToSelector:@selector(didNotListen)])
+    {
+        [self.delegate didNotListen];
+    }
+}
+
+-(void) respondDidStartListening
+{
+    if([self.delegate respondsToSelector:@selector(didStartListening)] && _device != nil)
+    {
+        [self.delegate didStartListening];
+    }
+}
+
+-(void) respondDidStopListening
+{
+    if([self.delegate respondsToSelector:@selector(didStopListening)] && _device != nil)
+    {
+        [self.delegate didStopListening];
+    }
 }
 
 -(void) createDevice
 {
     _device = [[TCDevice alloc] initWithCapabilityToken:capabilityToken
                                                delegate:self];
-    if([self.delegate respondsToSelector:@selector(didStartListening)] && _device != nil)
-    {
-        [self.delegate didStartListening];
-    }
-    
+    [self performSelectorOnMainThread:@selector(respondDidStartListening) withObject:nil waitUntilDone:NO];
 }
 
 -(void) connectCall:(NSString *)destination withConnectionHandler:(TGConnectionHandlerBlock)handler
@@ -184,12 +213,11 @@ static NSString* kTokenUrl = @"http://raspberry.troest.com/auth.php?client=%@";
 -(void) device:(TCDevice *)device didStopListeningForIncomingConnections:(NSError *)error
 {
     NSLog(@"didStopListeningForIncomingConnections %@", error.localizedFailureReason);
-    
-    
+    [self performSelectorOnMainThread:@selector(respondDidStopListening) withObject:nil waitUntilDone:NO];
 }
 -(void) device:(TCDevice *)device didReceiveIncomingConnection:(TCConnection *)connection
 {
-
+    NSLog(@"didReceiveIncomingConnection");
     if (self.connection.state != TCConnectionStateConnected) {
         _connection = connection;
         _connection.delegate = self;

@@ -102,6 +102,14 @@
     
 }
 
+- (IBAction)unwindToMain:(UIStoryboardSegue*) segue
+{
+    
+}
+- (IBAction)connectionStatePressed:(id)sender {
+    [[TGTwilioManager sharedInstance] reConnect];
+}
+
 - (void) unwindToRoot
 {
     //Go to root view. This is a bit hacky assuming that the presented one is a navigation controller. Should really check first before casting

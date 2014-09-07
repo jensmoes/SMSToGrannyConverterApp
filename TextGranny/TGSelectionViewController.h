@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSString* clientName;
 @property (weak, nonatomic) IBOutlet UILabel *clientLabel;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (weak, nonatomic) IBOutlet UILabel *connectionStatus;
+@property (weak, nonatomic) IBOutlet UILabel*connectionStatus;
 @property (weak, nonatomic) IBOutlet UIButton *textGrannyButton;
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
 @property (weak, nonatomic) IBOutlet UIButton *soundButton;

@@ -30,6 +30,7 @@
 
 
 //Connection
+- (void) reConnect;
 
 //Handler block definition for call connection state monitoring
 typedef void (^ TGConnectionHandlerBlock)(TCConnectionState state);
