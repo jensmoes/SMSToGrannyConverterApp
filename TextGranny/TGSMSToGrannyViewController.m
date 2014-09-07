@@ -60,14 +60,20 @@ static NSString* kDestinationSMSNumber = @"6197223236";
 }
 
 - (IBAction)composeMessage:(id)sender {
-    MFMessageComposeViewController *smsPicker = [[MFMessageComposeViewController alloc]init];
-    smsPicker.messageComposeDelegate = self;
-    smsPicker.recipients = @[kDestinationSMSNumber];
-    smsPicker.body = [NSString stringWithFormat:@"%@ ",_textInputField.text];
-    [self presentViewController:smsPicker animated:YES completion:^{
-        //<#code#>
-    }];
-    
+    if(_textInputField.text.length)
+    {
+        MFMessageComposeViewController *smsPicker = [[MFMessageComposeViewController alloc]init];
+        smsPicker.messageComposeDelegate = self;
+        smsPicker.recipients = @[kDestinationSMSNumber];
+        smsPicker.body = [NSString stringWithFormat:@"%@ ",_textInputField.text];
+        [self presentViewController:smsPicker animated:YES completion:^{
+            //<#code#>
+        }];
+    }
+    else
+    {
+        [[[UIAlertView alloc]initWithTitle:@"No Granny" message:@"Please choose a granny recipient" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil] show];
+    }
 }
 
 

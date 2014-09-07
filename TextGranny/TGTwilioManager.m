@@ -209,7 +209,11 @@ static NSString* kTokenUrl = @"http://raspberry.troest.com/auth.php?client=%@";
 }
 
 #pragma mark - TCDeviceDelegate
-
+- (void) deviceDidStartListeningForIncomingConnections:(TCDevice *)device
+{
+    NSLog(@"deviceDidStartListeningForIncomingConnections");
+    [self performSelectorOnMainThread:@selector(respondDidStartListening) withObject:nil waitUntilDone:NO];
+}
 -(void) device:(TCDevice *)device didStopListeningForIncomingConnections:(NSError *)error
 {
     NSLog(@"didStopListeningForIncomingConnections %@", error.localizedFailureReason);
