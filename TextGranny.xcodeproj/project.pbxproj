@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B41B7E6819BBC4EA0014BF2E /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = B41B7E6619BBC4EA0014BF2E /* mic.png */; };
+		B41B7E6919BBC4EA0014BF2E /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = B41B7E6719BBC4EA0014BF2E /* speaker.png */; };
+		B4A5FC0A19B7A68E00C01A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC0919B7A68E00C01A97 /* Foundation.framework */; };
+		B4A5FC0C19B7A68E00C01A97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC0B19B7A68E00C01A97 /* CoreGraphics.framework */; };
+		B4A5FC0E19B7A68E00C01A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC0D19B7A68E00C01A97 /* UIKit.framework */; };
+		B4A5FC1419B7A68E00C01A97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A5FC1219B7A68E00C01A97 /* InfoPlist.strings */; };
+		B4A5FC1619B7A68E00C01A97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC1519B7A68E00C01A97 /* main.m */; };
+		B4A5FC1A19B7A68E00C01A97 /* TGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC1919B7A68E00C01A97 /* TGAppDelegate.m */; };
+		B4A5FC1D19B7A68E00C01A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A5FC1B19B7A68E00C01A97 /* Main.storyboard */; };
+		B4A5FC2519B7A68E00C01A97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A5FC2419B7A68E00C01A97 /* Images.xcassets */; };
+		B4A5FC2C19B7A68E00C01A97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC2B19B7A68E00C01A97 /* XCTest.framework */; };
+		B4A5FC2D19B7A68E00C01A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC0919B7A68E00C01A97 /* Foundation.framework */; };
+		B4A5FC2E19B7A68E00C01A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC0D19B7A68E00C01A97 /* UIKit.framework */; };
+		B4A5FC3619B7A68E00C01A97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A5FC3419B7A68E00C01A97 /* InfoPlist.strings */; };
+		B4A5FC3819B7A68E00C01A97 /* TextGrannyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC3719B7A68E00C01A97 /* TextGrannyTests.m */; };
+		B4A5FC4319B7AC0A00C01A97 /* TGMakeCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC4219B7AC0A00C01A97 /* TGMakeCallViewController.m */; };
+		B4A5FC4619B7AC6200C01A97 /* TGSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC4519B7AC6200C01A97 /* TGSelectionViewController.m */; };
+		B4A5FC4A19B7B75500C01A97 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC4719B7B75500C01A97 /* libcrypto.a */; };
+		B4A5FC4B19B7B75500C01A97 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC4819B7B75500C01A97 /* libssl.a */; };
+		B4A5FC4C19B7B75500C01A97 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC4919B7B75500C01A97 /* libTwilioClient.a */; };
+		B4A5FC4E19B7BC9100C01A97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC4D19B7BC9100C01A97 /* AudioToolbox.framework */; };
+		B4A5FC5019B7BC9D00C01A97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC4F19B7BC9D00C01A97 /* AVFoundation.framework */; };
+		B4A5FC5219B7BCA700C01A97 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC5119B7BCA700C01A97 /* CFNetwork.framework */; };
+		B4A5FC5419B7BCB300C01A97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A5FC5319B7BCB300C01A97 /* SystemConfiguration.framework */; };
+		B4A5FC5719B7DE1300C01A97 /* TGClientNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC5619B7DE1300C01A97 /* TGClientNameViewController.m */; };
+		B4A5FC6019B9237000C01A97 /* TGTwilioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A5FC5F19B9237000C01A97 /* TGTwilioManager.m */; };
+		B4BAEABA19BA35FA0033DF5F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BAEAB919BA35FA0033DF5F /* MessageUI.framework */; };
+		B4BAEABD19BA40F00033DF5F /* TGSMSToGrannyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BAEABC19BA40F00033DF5F /* TGSMSToGrannyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4A5FC2F19B7A68E00C01A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4A5FBFE19B7A68E00C01A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4A5FC0519B7A68E00C01A97;
+			remoteInfo = TextGranny;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B41B7E6619BBC4EA0014BF2E /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
+		B41B7E6719BBC4EA0014BF2E /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
+		B4A5FC0619B7A68E00C01A97 /* TextGranny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextGranny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A5FC0919B7A68E00C01A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4A5FC0B19B7A68E00C01A97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B4A5FC0D19B7A68E00C01A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B4A5FC1119B7A68E00C01A97 /* TextGranny-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextGranny-Info.plist"; sourceTree = "<group>"; };
+		B4A5FC1319B7A68E00C01A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4A5FC1519B7A68E00C01A97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4A5FC1719B7A68E00C01A97 /* TextGranny-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextGranny-Prefix.pch"; sourceTree = "<group>"; };
+		B4A5FC1819B7A68E00C01A97 /* TGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGAppDelegate.h; sourceTree = "<group>"; };
+		B4A5FC1919B7A68E00C01A97 /* TGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAppDelegate.m; sourceTree = "<group>"; };
+		B4A5FC1C19B7A68E00C01A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4A5FC2419B7A68E00C01A97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4A5FC2A19B7A68E00C01A97 /* TextGrannyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextGrannyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A5FC2B19B7A68E00C01A97 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B4A5FC3319B7A68E00C01A97 /* TextGrannyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextGrannyTests-Info.plist"; sourceTree = "<group>"; };
+		B4A5FC3519B7A68E00C01A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4A5FC3719B7A68E00C01A97 /* TextGrannyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextGrannyTests.m; sourceTree = "<group>"; };
+		B4A5FC4119B7AC0A00C01A97 /* TGMakeCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMakeCallViewController.h; sourceTree = "<group>"; };
+		B4A5FC4219B7AC0A00C01A97 /* TGMakeCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMakeCallViewController.m; sourceTree = "<group>"; };
+		B4A5FC4419B7AC6200C01A97 /* TGSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSelectionViewController.h; sourceTree = "<group>"; };
+		B4A5FC4519B7AC6200C01A97 /* TGSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSelectionViewController.m; sourceTree = "<group>"; };
+		B4A5FC4719B7B75500C01A97 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		B4A5FC4819B7B75500C01A97 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		B4A5FC4919B7B75500C01A97 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
+		B4A5FC4D19B7BC9100C01A97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B4A5FC4F19B7BC9D00C01A97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B4A5FC5119B7BCA700C01A97 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B4A5FC5319B7BCB300C01A97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B4A5FC5519B7DE1300C01A97 /* TGClientNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TGClientNameViewController.h; path = ../TGClientNameViewController.h; sourceTree = "<group>"; };
+		B4A5FC5619B7DE1300C01A97 /* TGClientNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TGClientNameViewController.m; path = ../TGClientNameViewController.m; sourceTree = "<group>"; };
+		B4A5FC5E19B9237000C01A97 /* TGTwilioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTwilioManager.h; sourceTree = "<group>"; };
+		B4A5FC5F19B9237000C01A97 /* TGTwilioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTwilioManager.m; sourceTree = "<group>"; };
+		B4BAEAB919BA35FA0033DF5F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B4BAEABB19BA40F00033DF5F /* TGSMSToGrannyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSMSToGrannyViewController.h; sourceTree = "<group>"; };
+		B4BAEABC19BA40F00033DF5F /* TGSMSToGrannyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSMSToGrannyViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4A5FC0319B7A68E00C01A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BAEABA19BA35FA0033DF5F /* MessageUI.framework in Frameworks */,
+				B4A5FC5419B7BCB300C01A97 /* SystemConfiguration.framework in Frameworks */,
+				B4A5FC5219B7BCA700C01A97 /* CFNetwork.framework in Frameworks */,
+				B4A5FC5019B7BC9D00C01A97 /* AVFoundation.framework in Frameworks */,
+				B4A5FC4E19B7BC9100C01A97 /* AudioToolbox.framework in Frameworks */,
+				B4A5FC4B19B7B75500C01A97 /* libssl.a in Frameworks */,
+				B4A5FC0C19B7A68E00C01A97 /* CoreGraphics.framework in Frameworks */,
+				B4A5FC0E19B7A68E00C01A97 /* UIKit.framework in Frameworks */,
+				B4A5FC4A19B7B75500C01A97 /* libcrypto.a in Frameworks */,
+				B4A5FC4C19B7B75500C01A97 /* libTwilioClient.a in Frameworks */,
+				B4A5FC0A19B7A68E00C01A97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A5FC2719B7A68E00C01A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A5FC2C19B7A68E00C01A97 /* XCTest.framework in Frameworks */,
+				B4A5FC2E19B7A68E00C01A97 /* UIKit.framework in Frameworks */,
+				B4A5FC2D19B7A68E00C01A97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B41B7E6A19BBC5DA0014BF2E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B41B7E6619BBC4EA0014BF2E /* mic.png */,
+				B41B7E6719BBC4EA0014BF2E /* speaker.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B4A5FBFD19B7A68E00C01A97 = {
+			isa = PBXGroup;
+			children = (
+				B4A5FC0F19B7A68E00C01A97 /* TextGranny */,
+				B4A5FC3119B7A68E00C01A97 /* TextGrannyTests */,
+				B4A5FC0819B7A68E00C01A97 /* Frameworks */,
+				B4A5FC0719B7A68E00C01A97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4A5FC0719B7A68E00C01A97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4A5FC0619B7A68E00C01A97 /* TextGranny.app */,
+				B4A5FC2A19B7A68E00C01A97 /* TextGrannyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4A5FC0819B7A68E00C01A97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4BAEAB919BA35FA0033DF5F /* MessageUI.framework */,
+				B4A5FC5319B7BCB300C01A97 /* SystemConfiguration.framework */,
+				B4A5FC5119B7BCA700C01A97 /* CFNetwork.framework */,
+				B4A5FC4F19B7BC9D00C01A97 /* AVFoundation.framework */,
+				B4A5FC4D19B7BC9100C01A97 /* AudioToolbox.framework */,
+				B4A5FC4719B7B75500C01A97 /* libcrypto.a */,
+				B4A5FC4819B7B75500C01A97 /* libssl.a */,
+				B4A5FC4919B7B75500C01A97 /* libTwilioClient.a */,
+				B4A5FC0919B7A68E00C01A97 /* Foundation.framework */,
+				B4A5FC0B19B7A68E00C01A97 /* CoreGraphics.framework */,
+				B4A5FC0D19B7A68E00C01A97 /* UIKit.framework */,
+				B4A5FC2B19B7A68E00C01A97 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4A5FC0F19B7A68E00C01A97 /* TextGranny */ = {
+			isa = PBXGroup;
+			children = (
+				B4A5FC5519B7DE1300C01A97 /* TGClientNameViewController.h */,
+				B4A5FC5619B7DE1300C01A97 /* TGClientNameViewController.m */,
+				B4A5FC5E19B9237000C01A97 /* TGTwilioManager.h */,
+				B4A5FC5F19B9237000C01A97 /* TGTwilioManager.m */,
+				B4A5FC1819B7A68E00C01A97 /* TGAppDelegate.h */,
+				B4A5FC1919B7A68E00C01A97 /* TGAppDelegate.m */,
+				B4A5FC1B19B7A68E00C01A97 /* Main.storyboard */,
+				B4BAEABB19BA40F00033DF5F /* TGSMSToGrannyViewController.h */,
+				B4BAEABC19BA40F00033DF5F /* TGSMSToGrannyViewController.m */,
+				B4A5FC2419B7A68E00C01A97 /* Images.xcassets */,
+				B41B7E6A19BBC5DA0014BF2E /* Resources */,
+				B4A5FC1019B7A68E00C01A97 /* Supporting Files */,
+				B4A5FC4119B7AC0A00C01A97 /* TGMakeCallViewController.h */,
+				B4A5FC4219B7AC0A00C01A97 /* TGMakeCallViewController.m */,
+				B4A5FC4419B7AC6200C01A97 /* TGSelectionViewController.h */,
+				B4A5FC4519B7AC6200C01A97 /* TGSelectionViewController.m */,
+			);
+			path = TextGranny;
+			sourceTree = "<group>";
+		};
+		B4A5FC1019B7A68E00C01A97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A5FC1119B7A68E00C01A97 /* TextGranny-Info.plist */,
+				B4A5FC1219B7A68E00C01A97 /* InfoPlist.strings */,
+				B4A5FC1519B7A68E00C01A97 /* main.m */,
+				B4A5FC1719B7A68E00C01A97 /* TextGranny-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4A5FC3119B7A68E00C01A97 /* TextGrannyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4A5FC3719B7A68E00C01A97 /* TextGrannyTests.m */,
+				B4A5FC3219B7A68E00C01A97 /* Supporting Files */,
+			);
+			path = TextGrannyTests;
+			sourceTree = "<group>";
+		};
+		B4A5FC3219B7A68E00C01A97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A5FC3319B7A68E00C01A97 /* TextGrannyTests-Info.plist */,
+				B4A5FC3419B7A68E00C01A97 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4A5FC0519B7A68E00C01A97 /* TextGranny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A5FC3B19B7A68E00C01A97 /* Build configuration list for PBXNativeTarget "TextGranny" */;
+			buildPhases = (
+				B4A5FC0219B7A68E00C01A97 /* Sources */,
+				B4A5FC0319B7A68E00C01A97 /* Frameworks */,
+				B4A5FC0419B7A68E00C01A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextGranny;
+			productName = TextGranny;
+			productReference = B4A5FC0619B7A68E00C01A97 /* TextGranny.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4A5FC2919B7A68E00C01A97 /* TextGrannyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A5FC3E19B7A68E00C01A97 /* Build configuration list for PBXNativeTarget "TextGrannyTests" */;
+			buildPhases = (
+				B4A5FC2619B7A68E00C01A97 /* Sources */,
+				B4A5FC2719B7A68E00C01A97 /* Frameworks */,
+				B4A5FC2819B7A68E00C01A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4A5FC3019B7A68E00C01A97 /* PBXTargetDependency */,
+			);
+			name = TextGrannyTests;
+			productName = TextGrannyTests;
+			productReference = B4A5FC2A19B7A68E00C01A97 /* TextGrannyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4A5FBFE19B7A68E00C01A97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jens Troest";
+				TargetAttributes = {
+					B4A5FC0519B7A68E00C01A97 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B4A5FC2919B7A68E00C01A97 = {
+						TestTargetID = B4A5FC0519B7A68E00C01A97;
+					};
+				};
+			};
+			buildConfigurationList = B4A5FC0119B7A68E00C01A97 /* Build configuration list for PBXProject "TextGranny" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4A5FBFD19B7A68E00C01A97;
+			productRefGroup = B4A5FC0719B7A68E00C01A97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4A5FC0519B7A68E00C01A97 /* TextGranny */,
+				B4A5FC2919B7A68E00C01A97 /* TextGrannyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4A5FC0419B7A68E00C01A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A5FC2519B7A68E00C01A97 /* Images.xcassets in Resources */,
+				B4A5FC1419B7A68E00C01A97 /* InfoPlist.strings in Resources */,
+				B4A5FC1D19B7A68E00C01A97 /* Main.storyboard in Resources */,
+				B41B7E6819BBC4EA0014BF2E /* mic.png in Resources */,
+				B41B7E6919BBC4EA0014BF2E /* speaker.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A5FC2819B7A68E00C01A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A5FC3619B7A68E00C01A97 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4A5FC0219B7A68E00C01A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A5FC5719B7DE1300C01A97 /* TGClientNameViewController.m in Sources */,
+				B4A5FC6019B9237000C01A97 /* TGTwilioManager.m in Sources */,
+				B4BAEABD19BA40F00033DF5F /* TGSMSToGrannyViewController.m in Sources */,
+				B4A5FC1619B7A68E00C01A97 /* main.m in Sources */,
+				B4A5FC4319B7AC0A00C01A97 /* TGMakeCallViewController.m in Sources */,
+				B4A5FC4619B7AC6200C01A97 /* TGSelectionViewController.m in Sources */,
+				B4A5FC1A19B7A68E00C01A97 /* TGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A5FC2619B7A68E00C01A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A5FC3819B7A68E00C01A97 /* TextGrannyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4A5FC3019B7A68E00C01A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4A5FC0519B7A68E00C01A97 /* TextGranny */;
+			targetProxy = B4A5FC2F19B7A68E00C01A97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4A5FC1219B7A68E00C01A97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A5FC1319B7A68E00C01A97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B4A5FC1B19B7A68E00C01A97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A5FC1C19B7A68E00C01A97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4A5FC3419B7A68E00C01A97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A5FC3519B7A68E00C01A97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4A5FC3919B7A68E00C01A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4A5FC3A19B7A68E00C01A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4A5FC3C19B7A68E00C01A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextGranny/TextGranny-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./TwilioClient/Headers/,
+				);
+				INFOPLIST_FILE = "TextGranny/TextGranny-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4A5FC3D19B7A68E00C01A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextGranny/TextGranny-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./TwilioClient/Headers/,
+				);
+				INFOPLIST_FILE = "TextGranny/TextGranny-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B4A5FC3F19B7A68E00C01A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TextGranny.app/TextGranny";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextGranny/TextGranny-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TextGrannyTests/TextGrannyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B4A5FC4019B7A68E00C01A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TextGranny.app/TextGranny";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextGranny/TextGranny-Prefix.pch";
+				INFOPLIST_FILE = "TextGrannyTests/TextGrannyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4A5FC0119B7A68E00C01A97 /* Build configuration list for PBXProject "TextGranny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A5FC3919B7A68E00C01A97 /* Debug */,
+				B4A5FC3A19B7A68E00C01A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4A5FC3B19B7A68E00C01A97 /* Build configuration list for PBXNativeTarget "TextGranny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A5FC3C19B7A68E00C01A97 /* Debug */,
+				B4A5FC3D19B7A68E00C01A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4A5FC3E19B7A68E00C01A97 /* Build configuration list for PBXNativeTarget "TextGrannyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A5FC3F19B7A68E00C01A97 /* Debug */,
+				B4A5FC4019B7A68E00C01A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4A5FBFE19B7A68E00C01A97 /* Project object */;
+}
