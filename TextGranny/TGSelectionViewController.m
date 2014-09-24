@@ -32,7 +32,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [NSString alloc] init
     speaker = YES;
     // Do any additional setup after loading the view.
     _clientName = [[NSUserDefaults standardUserDefaults] stringForKey:@"clientName"];

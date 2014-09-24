@@ -4,10 +4,6 @@
    <Group
       location = "container:"
       name = "Resources">
-      <Group
-         location = "container:"
-         name = "New Group">
-      </Group>
       <FileRef
          location = "self:TextGranny.xcodeproj">
       </FileRef>
